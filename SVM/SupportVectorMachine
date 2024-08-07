@@ -1,0 +1,43 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Loads the CSV file with extracted features.
+data = pd.read_csv('/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/combined_metrics.csv')
+
+# Drop the first column
+data = data.drop(data.columns[0], axis=1)  
+
+# Features
+X = data.drop('Human/AI Generated', axis=1)
+# Labels USE THE TOP ROW AS THE DATA LABEL
+y = data['Human/AI Generated']
+
+# Splits the data into training and testing sets.
+# 80% is for training and 20% is for testing the model.
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2)
+
+# Standardize Data
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Training the model
+svm_model = SVC(kernel='linear')
+svm_model.fit(X_train, y_train)
+
+# Predictions and Evaluation
+y_pred = svm_model.predict(X_test)
+
+accuracy = accuracy_score(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+class_report = classification_report(y_test, y_pred)
+
+print(f'Accuracy: {accuracy}')
+print('Confusion Matrix:')
+print(conf_matrix)
+print('Classification Report:')
+print(class_report)
