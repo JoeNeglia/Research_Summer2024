@@ -3,13 +3,13 @@ import subprocess
 import re
 
 # Path to the Checkstyle JAR file
-checkstyle_jar = "/Users/joeneglia/Desktop/Checkstyle/checkstyle-10.18.1-all.jar"
+checkstyle_jar = "jar/file"
 
 # Path to the Google-style Checkstyle configuration file
-checkstyle_config = "/Users/joeneglia/Desktop/Checkstyle/google_checks.xml"
+checkstyle_config = "config/file"
 
 # Path to the folder containing Java files
-folder_path = "/Users/joeneglia/Desktop/test"
+folder_path = "java/folder"
 
 # Function to analyze a single Java file and count unused imports
 def count_unused_imports(java_file):
