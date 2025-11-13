@@ -5,7 +5,7 @@ import os
 openai.api_key = 'API-KEY'
 
 # Directory where the generated Java files will be saved
-output_dir = '/Users/joeneglia/Desktop/Research_Summer2024/Data/AIJavaFiles'
+output_dir = 'Local/Directory'
 
 # Make sure the output directory exists
 if not os.path.exists(output_dir):
