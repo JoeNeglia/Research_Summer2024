@@ -111,7 +111,7 @@ def process_java_files(input_folder, output_folder):
                             'Number of Imports', 'Total Cyclomatic Complexity', 'Avg Cyclomatic Complexity', 'Human/AI Generated'])
         csvwriter.writerows(combined_data)
 
-input_folder = '/Users/joeneglia/Desktop/Research_Summer2024/Data/CleanedAIJavaFiles'
-output_folder = '/Users/joeneglia/Desktop/Research_Summer2024/Data/AIFeatures'
+input_folder = 'input/folder'
+output_folder = 'output/folder'
 
 process_java_files(input_folder, output_folder)
