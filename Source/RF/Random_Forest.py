@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import matplotlib.pyplot as plt
 
 # Load the dataset
-data = pd.read_csv('/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/FinalCombinedFeatures.csv')
+data = pd.read_csv('dataset/file')
 
 # Drop the first column
 data = data.drop(data.columns[0], axis=1)
