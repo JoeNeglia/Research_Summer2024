@@ -21,9 +21,9 @@ def combine_csv_files(file1, file2, output_dir, output_filename):
     return output_file
 
 if __name__ == "__main__":
-    file1 = "/Users/joeneglia/Desktop/Research_Summer2024/Data/HumanFeatures/HumanFinal.csv"
-    file2 = "/Users/joeneglia/Desktop/Research_Summer2024/Data/AIFeatures/AIFinal.csv"
-    output_dir = "/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures"
+    file1 = "human/folder"
+    file2 = "ai/folder"
+    output_dir = "output/folder"
     output_filename = "FinalCombinedFeatures.csv"
 
     output_file = combine_csv_files(file1, file2, output_dir, output_filename)
