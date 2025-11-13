@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the dataset
-file_path = '/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/FinalCombinedFeatures.csv'
+file_path = 'dataset/folder'
 data = pd.read_csv(file_path)
 
 # Prepare the dataset
