@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # Loads the CSV file with extracted features.
-data = pd.read_csv('/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/combined_metrics.csv')
+data = pd.read_csv('dataset/file')
 
 # Drop the first column
 data = data.drop(data.columns[0], axis=1)  
