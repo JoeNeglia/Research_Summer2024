@@ -34,7 +34,7 @@ def process_files(input_dir, output_dir):
     print(f"Total files processed: {files_processed}")
 
 if __name__ == "__main__":
-    input_directory = "/Users/joeneglia/Desktop/Research_Summer2024/Data/AIJavaFiles"
-    output_directory = "/Users/joeneglia/Desktop/Research_Summer2024/Data/CleanedAIJavaFiles"
+    input_directory = "input/directory"
+    output_directory = "output/directory"
 
     process_files(input_directory, output_directory)
