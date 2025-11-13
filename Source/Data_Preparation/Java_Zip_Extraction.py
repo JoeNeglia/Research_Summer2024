@@ -43,7 +43,7 @@ def process_zip_files(zip_files_dir, output_dir):
                 extract_java_files(zip_file_path, output_dir)
 
 # Example usage
-zip_files_dir = '/Users/joeneglia/Desktop/Data/HumanProjects'  # Directory containing your zip files
-output_dir = '/Users/joeneglia/Desktop/Data/HumanJavaFiles'  # Directory where you want to save the combined java files
+zip_files_dir = 'input/folder'  # Directory containing your zip files
+output_dir = 'output/folder'  # Directory where you want to save the combined java files
 
 process_zip_files(zip_files_dir, output_dir)
