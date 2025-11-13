@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import KBinsDiscretizer
 
 # Load your dataset (update the path to your actual dataset file)
-input_csv_path = '/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/combined_metrics.csv'
-output_csv_path = '/Users/joeneglia/Desktop/Research_Summer2024/Data/CombinedFeatures/combined_metrics_one_hot_encoded.csv'
+input_csv_path = 'input/file'
+output_csv_path = 'output/file'
 
 # Load the dataset into a pandas DataFrame
 df = pd.read_csv(input_csv_path)
